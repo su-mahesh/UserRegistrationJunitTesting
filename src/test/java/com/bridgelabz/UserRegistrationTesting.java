@@ -19,5 +19,11 @@ public class UserRegistrationTesting {
             System.out.println(failure.toString());
         }
         System.out.println("last name test result: "+result.wasSuccessful());
+
+        result = JUnitCore.runClasses(EmailAddressTest.class);
+        for (Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println("email address test result: "+result.wasSuccessful());
     }
 }
