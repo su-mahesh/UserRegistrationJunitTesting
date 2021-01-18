@@ -17,6 +17,7 @@ public class UserRegistration {
     }
     public boolean mobileNumberTesting(String mobileNumber){
         return Pattern.matches(mobileNumberPattern, mobileNumber);
+        
     }
 }
 

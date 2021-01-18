@@ -25,5 +25,11 @@ public class UserRegistrationTesting {
             System.out.println(failure.toString());
         }
         System.out.println("email address test result: "+result.wasSuccessful());
+
+        result = JUnitCore.runClasses(MobileNumberTest.class);
+        for (Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println("mobile number test result: "+result.wasSuccessful());
     }
 }
