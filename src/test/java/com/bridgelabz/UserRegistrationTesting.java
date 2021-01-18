@@ -31,5 +31,12 @@ public class UserRegistrationTesting {
             System.out.println(failure.toString());
         }
         System.out.println("mobile number test result: "+result.wasSuccessful());
+
+        result = JUnitCore.runClasses(PasswordTest.class);
+        for (Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println("password test result: "+result.wasSuccessful());
+
     }
 }
