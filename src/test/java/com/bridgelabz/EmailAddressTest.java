@@ -36,7 +36,8 @@ public class EmailAddressTest {
                 {"abc",  false}, {"abc@.com.my", false}, {"abc123@gmail.a", false}, {"abc123@.com", false},
                 {"abc123@.com.com", false}, {".abc@abc.com", false}, {"abc()*@gmail.com", false}, {"abc@%*.com", false},
                 {"abc..2002@gmail.com", false}, {"abc.@gmail.com", false}, {"abc@abc@gmail.com", false},
-                {"abc@gmail.com.1a", false}, {"abc@gmail.com.aa.au", false}});
+                {"abc@gmail.com.1a", false}, {"abc@gmail.com.aa.au", false},
+                {"a@b.com", false}});
 
         }
 
