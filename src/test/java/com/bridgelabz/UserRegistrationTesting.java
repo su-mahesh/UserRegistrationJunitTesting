@@ -13,5 +13,11 @@ public class UserRegistrationTesting {
             System.out.println(failure.toString());
         }
         System.out.println("first name test result: "+result.wasSuccessful());
+
+        result = JUnitCore.runClasses(LastNameTest.class);
+        for (Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println("last name test result: "+result.wasSuccessful());
     }
 }
