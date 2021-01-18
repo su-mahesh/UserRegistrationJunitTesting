@@ -29,7 +29,7 @@ public class PasswordTest {
 
     @Parameterized.Parameters
     public static Collection input(){
-        return Arrays.asList(new Object[][] {{"knkn", false}, {"hkjHhoohj", true}, {"njwJHsai", true}, {"mlmHjoo768", true}, {"232", false}});
+        return Arrays.asList(new Object[][] {{"knkn", false}, {"hkjHh4oohj", true}, {"nj9wJHsai", true}, {"mlmHjoo768", true}, {"232", false}});
     }
 
     @Test
